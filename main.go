@@ -1,13 +1,18 @@
 package main
 
+//import "fmt"
 
 func main() {
-	cards := deck{"Ace of Diamonds", newCard()}
-	cards = append(cards, "Six of spades")
+	// cards := newDeck()
 
+
+	// hand, remainingCards := deal(cards, 5)
+
+	// hand.print()
+	// remainingCards.print()
+
+	cards := newDeckFromFile("my_card")
 	cards.print()
+
 }
 
-func newCard () string {
-	return "Five of Diamonds"
-}
